@@ -13,6 +13,7 @@ const collapseMenu = () => {
     if(clicks%2 == 0)
     {
         nav.style.height = 25 + "rem"
+        nav.style.padding = "1rem 0"
         navLinks.style.display = "block"
         navSearch.style.display = "flex"
 
@@ -29,6 +30,7 @@ const collapseMenu = () => {
             navSearch.style.display = "none"
         }, 500);
 
+        nav.style.padding = "0.5rem 0"
         hamburger.style.gridRowGap = "5px"
         line1.style.transform = "rotate(0deg)"
         line2.style.transform = "rotate(0deg)"
@@ -38,3 +40,34 @@ const collapseMenu = () => {
 }
 
 document.querySelector(".hamburger-container").addEventListener("click", collapseMenu)
+
+window.onscroll = e => {
+    if(screen.width > 935)
+    {
+        const scrollPos = document.querySelector('html').scrollTop
+        if(scrollPos > 600)
+        {
+            nav.style.height = 10 + "vh"
+        }
+        else if(scrollPos < 550) {
+            nav.style.height = 15 + "vh"
+        }
+    }
+}
+
+const dots =document.querySelectorAll('.dot')
+
+function clearDots() {
+    dots.forEach(dot => {
+        dot.style.backgroundColor = "dimgray"
+        dot.style.width = 0.5 + "rem"
+    })
+}
+
+dots.forEach(dot => {
+    dot.addEventListener('click', e => {
+        clearDots()
+        e.target.style.backgroundColor = "turquoise"
+        e.target.style.width = 1 + "rem"
+    })
+})
