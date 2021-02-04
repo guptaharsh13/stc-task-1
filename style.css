@@ -703,6 +703,12 @@ nav {
     }
 }
 
+@media screen and (max-width: 410px) {
+    .blog-card {
+        margin: 1.5rem 0;
+    }
+}
+
 .contact {
     padding: 5rem 1rem;
     text-align: center;
@@ -774,7 +780,8 @@ nav {
 }
 
 .contact-field:focus {
-    box-shadow: 0 0 10px turquoise;
+    border-color: transparent;
+    box-shadow: 0 0 10px darkgray;
 }
 
 .fields textarea {
@@ -790,7 +797,8 @@ nav {
 }
 
 textarea:focus {
-    box-shadow: 0 0 15px turquoise;
+    border-color: transparent;
+    box-shadow: 0 0 10px darkgray;
 }
 
 .contact button {
