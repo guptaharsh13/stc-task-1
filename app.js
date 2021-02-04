@@ -1,3 +1,5 @@
+// window.location.href += '#client1'
+
 let clicks = 0
 
 const nav = document.querySelector("nav")
