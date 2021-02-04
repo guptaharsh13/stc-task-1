@@ -313,6 +313,12 @@ nav {
     width: 23rem;
 }
 
+@media screen and (max-width: 375px) {
+    .about-img img {
+        width: 20rem;
+    }
+}
+
 .about-content {
     justify-self: start;
     width: 75%;
@@ -704,6 +710,7 @@ nav {
 }
 
 @media screen and (max-width: 410px) {
+
     .blog-card {
         margin: 1.5rem 0;
     }
