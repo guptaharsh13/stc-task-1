@@ -719,7 +719,6 @@ nav {
 }
 
 @media screen and (max-width: 410px) {
-
     .blog-card {
         margin: 1.5rem 0;
     }
@@ -868,7 +867,12 @@ footer {
 
 .copy {
     color: white;
+<<<<<<< HEAD
     font-family: 'Play', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+=======
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+>>>>>>> edeb6323f51e8fb2f8969b7a6d8acf3cdf0125cd
